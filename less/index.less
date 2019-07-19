@@ -47,13 +47,81 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid darkgreen;
+	
+}
+html, body {
+	height: 100%;	
 }
 
-html, body {
-    height: 100%;
+@dark-bg:#70163c;
+@med-bg: #ad6a63;
+@accent-bg: #b58db6;
+@light-bg: #d0ada7;
+@lightest-bg: #f8f3f0;
+
+@light-txt: #e8d6cb;
+
+@link-txt: dimgray;
+
+
+
+@main-font: 'Muli Light', sans-serif;
+@header-font: 'Roboto Bold', sans-serif;
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.container {
+	width: 800px;
+	margin: 0px auto;
+}
+
+header, nav, .about {
+	display: flex;
+	
+}
+
+header {
+	justify-content: flex-end;
+
+	nav {
+		a {
+			margin: 1rem;
+			text-decoration: none;
+			color: @link-txt
+		}
+	}
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+.photo {
+	min-width: 300px;
+	min-height: 400px;
+	background: @accentbg
+}
+
+.about {
+	background: @dark-bg;
+	color: @light-txt;
+	flex-direction: column;
+}
+
+.upper-txt {
+	flex-direction: column;
+	max-width: 300px;
 }
 
